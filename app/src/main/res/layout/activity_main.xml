@@ -35,7 +35,7 @@
             android:hint="@string/nama"
             android:theme="@style/EditText"
             android:inputType="text"
-            android:textSize="14sp"
+            android:textSize="16sp"
             />
 
 <!--        <com.rengwuxian.materialedittext.MaterialEditText-->
@@ -51,7 +51,7 @@
 <!--            app:met_floatingLabelAnimating="true"-->
 <!--            app:met_floatingLabelAlwaysShown="true"-->
 <!--            app:met_floatingLabel="highlight"-->
-<!--            app:met_floatingLabelTextSize="14sp"-->
+<!--            app:met_floatingLabelTextSize="16sp"-->
 <!--            app:met_primaryColor="@color/colorAccent1"-->
 <!--            app:met_floatingLabelTextColor="@color/colorAccent1"-->
 <!--            android:textColorHighlight="@color/colorPrimary"-->
@@ -83,7 +83,7 @@
             android:hint="@string/umur"
             android:theme="@style/EditText"
             android:inputType="number"
-            android:textSize="14sp"
+            android:textSize="16sp"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -97,7 +97,7 @@
             android:hint="@string/email"
             android:theme="@style/EditText"
             android:inputType="textEmailAddress"
-            android:textSize="14sp"
+            android:textSize="16sp"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -111,7 +111,7 @@
             android:hint="@string/telp"
             android:theme="@style/EditText"
             android:inputType="phone"
-            android:textSize="14sp"
+            android:textSize="16sp"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -126,7 +126,7 @@
             android:hint="@string/alamat"
             android:theme="@style/EditText"
             android:inputType="textMultiLine"
-            android:textSize="14sp"
+            android:textSize="16sp"
             />
 
         <androidx.appcompat.widget.AppCompatButton

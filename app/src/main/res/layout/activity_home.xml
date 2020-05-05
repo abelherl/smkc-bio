@@ -59,6 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:layout_toStartOf="@id/bt_edit"
                 android:layout_alignTop="@id/iv_profil"
                 android:textSize="20sp"

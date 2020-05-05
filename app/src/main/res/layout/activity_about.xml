@@ -37,7 +37,7 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="14sp"
+            android:textSize="15sp"
             android:textColor="@color/hint"
             android:layout_marginTop="30dp"
             android:layout_marginStart="30dp"
@@ -235,6 +235,7 @@
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_works"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
