@@ -3,7 +3,7 @@
     <string name="nama">Nama</string>
     <string name="umur">Umur (tahun)</string>
     <string name="email">Email</string>
-    <string name="telp">Telp</string>
+    <string name="telp">Telepon</string>
     <string name="alamat">Alamat</string>
     <string name="simpan">Simpan</string>
     <string name="jk">Jenis Kelamin</string>

@@ -36,6 +36,7 @@
             android:textColorHint="@color/hint"
             android:hint="@string/nama"
             android:theme="@style/EditText"
+            android:inputType="text"
             />
 
 <!--        <com.rengwuxian.materialedittext.MaterialEditText-->
@@ -87,6 +88,7 @@
             android:textColorHint="@color/hint"
             android:hint="@string/umur"
             android:theme="@style/EditText"
+            android:inputType="number"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -101,6 +103,7 @@
             android:textColorHint="@color/hint"
             android:hint="@string/email"
             android:theme="@style/EditText"
+            android:inputType="textEmailAddress"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -115,12 +118,13 @@
             android:textColorHint="@color/hint"
             android:hint="@string/telp"
             android:theme="@style/EditText"
+            android:inputType="phone"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_alamat"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="120dp"
             android:layout_marginTop="25dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -129,6 +133,7 @@
             android:textColorHint="@color/hint"
             android:hint="@string/alamat"
             android:theme="@style/EditText"
+            android:inputType="textMultiLine"
             />
 
         <androidx.appcompat.widget.AppCompatButton
