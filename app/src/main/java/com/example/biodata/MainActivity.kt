@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.widget.AppCompatButton
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val bt_simpan = findViewById<Button>(R.id.bt_simpan)
+        val bt_simpan = findViewById<AppCompatButton>(R.id.bt_simpan)
 
         bt_simpan.setOnClickListener { goToHome() }
     }

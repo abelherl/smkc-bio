@@ -9,114 +9,83 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
-        android:orientation="vertical"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp">
+        android:orientation="vertical">
 
-        <RelativeLayout
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/abelherl"
+            android:scaleType="centerInside"/>
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_judul"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:textSize="25sp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:text="@string/biodata"
-                />
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/bt_info"
-                android:layout_width="20dp"
-                android:layout_height="35dp"
-                android:tint="@color/white"
-                android:layout_alignTop="@id/tv_judul"
-                android:layout_alignParentEnd="true"
-                android:background="#00000000"
-                android:src="@drawable/ic_info_outline_black_24dp"
-                />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="-80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle"
+            android:elevation="7dp"
+            >
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_profil"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:tint="@color/colorAccent1"
-                android:layout_marginTop="25dp"
-                android:src="@drawable/ic_account_circle_black_24dp"
-                />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_nama"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_toStartOf="@id/bt_edit"
-                android:layout_alignTop="@id/iv_profil"
-                android:textSize="20sp"
-                android:textColor="@color/white"
-                android:text="Abel Herlambang"
-                android:layout_above="@id/tv_phone"
-                android:gravity="bottom|left"
-                android:layout_toEndOf="@id/iv_profil"
-                android:lines="2"
-                />
+                android:layout_height="match_parent"
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_phone"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_alignStart="@id/tv_nama"
-                android:layout_alignEnd="@id/tv_nama"
-                android:textSize="16sp"
-                android:textColor="@color/hint"
-                android:text="089679844350"
-                android:gravity="top|left"
-                android:layout_alignBottom="@id/iv_profil"
-                android:layout_toEndOf="@id/iv_profil"
-                android:lines="2"
-                />
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/bt_edit"
-                android:layout_width="20dp"
-                android:layout_height="35dp"
-                android:tint="@color/white"
-                android:background="#00000000"
-                android:layout_marginTop="25dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignBottom="@id/tv_nama"
-                android:src="@drawable/ic_mode_edit_black_24dp"
-                />
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/bt_dial"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:tint="@color/white"
-                android:background="#00000000"
-                android:layout_alignEnd="@id/bt_edit"
-                android:layout_below="@id/bt_edit"
-                android:layout_alignTop="@id/tv_phone"
-                android:src="@drawable/ic_local_phone_black_24dp"
-                />
-
-        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:textColor="@color/hint"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="I’m a 17 years old guy who loves guitar, drawing and learning languages. Programming languages and real languages. I've been exploring inside the graphic design world since I was 11. And now, I'm ready to implement it in another world. Programming."
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/nama"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_nama"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/hint"
+                android:layout_marginStart="15dp"
+                android:text="Hafiz Furqon Presanabel"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
@@ -145,7 +114,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
@@ -174,7 +145,40 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/telp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/hint"
+                android:layout_marginStart="15dp"
+                android:text="089679844250"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
@@ -203,7 +207,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
@@ -227,6 +233,19 @@
                 />
 
         </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gradient"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/works"/>
 
     </LinearLayout>
 

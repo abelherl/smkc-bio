@@ -17,11 +17,11 @@
             android:id="@+id/et_judul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
             android:textSize="25sp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="@string/app_name"
+            android:text="@string/biodata"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -35,6 +35,7 @@
             android:hint="@string/nama"
             android:theme="@style/EditText"
             android:inputType="text"
+            android:textSize="14sp"
             />
 
 <!--        <com.rengwuxian.materialedittext.MaterialEditText-->
@@ -56,7 +57,6 @@
 <!--            android:textColorHighlight="@color/colorPrimary"-->
 <!--            android:maxLines="1"-->
 <!--            android:inputType="text"/>-->
-
 
 
         <LinearLayout
@@ -83,6 +83,7 @@
             android:hint="@string/umur"
             android:theme="@style/EditText"
             android:inputType="number"
+            android:textSize="14sp"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -96,6 +97,7 @@
             android:hint="@string/email"
             android:theme="@style/EditText"
             android:inputType="textEmailAddress"
+            android:textSize="14sp"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -109,6 +111,7 @@
             android:hint="@string/telp"
             android:theme="@style/EditText"
             android:inputType="phone"
+            android:textSize="14sp"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -123,6 +126,7 @@
             android:hint="@string/alamat"
             android:theme="@style/EditText"
             android:inputType="textMultiLine"
+            android:textSize="14sp"
             />
 
         <androidx.appcompat.widget.AppCompatButton

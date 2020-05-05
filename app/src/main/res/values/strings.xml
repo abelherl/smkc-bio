@@ -11,6 +11,7 @@
     <string name="dial">Dial</string>
     <string name="about">About</string>
     <string name="biodata">Biodata</string>
+    <string name="works">Works</string>
 
     <string-array name="jk">
         <item>Pilih jenis kelamin</item>
