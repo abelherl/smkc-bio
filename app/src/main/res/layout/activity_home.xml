@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/biodata"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_profil"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:tint="@color/colorAccent1"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_nama"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toLeftOf="@id/iv_edit"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="Abel Herlambang"
+                android:gravity="bottom|left"
+                android:layout_toEndOf="@id/iv_profil"
+                android:lines="2"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignStart="@id/tv_nama"
+                android:layout_alignEnd="@id/tv_nama"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="089679844350"
+                android:gravity="top|left"
+                android:layout_below="@id/tv_nama"
+                android:layout_toEndOf="@id/iv_profil"
+                android:lines="2"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:tint="@color/white"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@id/tv_nama"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_dial"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:tint="@color/white"
+                android:layout_alignEnd="@id/iv_edit"
+                android:layout_below="@id/iv_edit"
+                android:layout_alignTop="@id/tv_phone"
+                android:src="@drawable/ic_local_phone_black_24dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
