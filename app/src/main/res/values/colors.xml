@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- All the colors used in the application -->
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#56307D</color>
+    <color name="colorPrimaryDark">#351F69</color>
+    <color name="colorAccent1">#41BFAA</color>
+    <color name="colorAccent2">#26C6DA</color>
+    <color name="hint">#99FFFFFF</color>
+    <color name="white">#f8f8f8</color>
+    <color name="black">#111111</color>
 </resources>

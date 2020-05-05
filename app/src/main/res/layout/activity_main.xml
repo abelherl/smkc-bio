@@ -1,18 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/et_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/app_name"
+            />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:hint="@string/nama"
+            android:theme="@style/EditText"
+            />
+
+<!--        <com.rengwuxian.materialedittext.MaterialEditText-->
+<!--            android:id="@+id/et_nama"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="20sp"-->
+<!--            android:layout_marginTop="20sp"-->
+<!--            app:met_textColor="@color/white"-->
+<!--            app:met_baseColor="@color/colorAccent1"-->
+<!--            app:met_textColorHint="@color/colorAccent1"-->
+<!--            app:met_floatingLabelText="@string/nama"-->
+<!--            app:met_floatingLabelAnimating="true"-->
+<!--            app:met_floatingLabelAlwaysShown="true"-->
+<!--            app:met_floatingLabel="highlight"-->
+<!--            app:met_floatingLabelTextSize="14sp"-->
+<!--            app:met_primaryColor="@color/colorAccent1"-->
+<!--            app:met_floatingLabelTextColor="@color/colorAccent1"-->
+<!--            android:textColorHighlight="@color/colorPrimary"-->
+<!--            android:maxLines="1"-->
+<!--            android:inputType="text"/>-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded">
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:entries="@array/jk"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_umur"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:hint="@string/umur"
+            android:theme="@style/EditText"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:hint="@string/email"
+            android:theme="@style/EditText"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_telp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:hint="@string/telp"
+            android:theme="@style/EditText"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:hint="@string/alamat"
+            android:theme="@style/EditText"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/gradient"
+            android:text="@string/simpan"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</ScrollView>

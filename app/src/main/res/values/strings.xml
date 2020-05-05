@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">Biodata</string>
+    <string name="app_name">SMKC Challenge 1</string>
+    <string name="nama">Nama</string>
+    <string name="umur">Umur (tahun)</string>
+    <string name="email">Email</string>
+    <string name="telp">Telp</string>
+    <string name="alamat">Alamat</string>
+    <string name="simpan">Simpan</string>
+    <string name="jk">Jenis Kelamin</string>
+    <string name="edit">Edit nama</string>
+    <string name="dial">Dial</string>
+    <string name="about">About</string>
+
+    <string-array name="jk">
+        <item>Pilih jenis kelamin</item>
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
 </resources>
