@@ -3,6 +3,7 @@
 <!-- All the colors used in the application -->
 <resources>
     <color name="colorPrimary">#56307D</color>
+<!--    <color name="colorPrimary">#351F69</color>-->
     <color name="colorPrimaryDark">#351F69</color>
     <color name="colorAccent1">#3DB4A0</color>
     <color name="colorAccent2">#24BED1</color>

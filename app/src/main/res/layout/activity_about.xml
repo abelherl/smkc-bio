@@ -45,7 +45,7 @@
             android:textAlignment="center"
             android:layout_gravity="center"
             android:lineSpacingExtra="5dp"
-            android:text="I’m a 17 years old guy who loves guitar, drawing and learning languages. Programming languages and real languages. I've been exploring inside the graphic design world since I was 11. And now, I'm ready to implement it in another world. Programming."
+            android:text="I’m an 18 years old guy who loves guitar, drawing and learning languages. Programming languages and real languages. I've been exploring inside the graphic design world since I was 11. And now, I'm ready to implement it in another world. Programming."
             />
 
         <LinearLayout
@@ -105,7 +105,7 @@
                 android:textSize="16sp"
                 android:textColor="@color/hint"
                 android:layout_marginStart="15dp"
-                android:text="17"
+                android:text="18"
                 />
 
         </LinearLayout>

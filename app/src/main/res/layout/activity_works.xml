@@ -39,7 +39,7 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
-            android:layout_height="287dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:src="@drawable/artboard"
             android:scaleType="fitXY"
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/attachment5"
-            android:scaleType="centerInside"
+            android:scaleType="fitXY"
             android:adjustViewBounds="true"/>
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -74,10 +74,11 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
-            android:layout_height="287dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:src="@drawable/attachment12"
-            android:scaleType="centerInside"/>
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
