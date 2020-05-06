@@ -14,7 +14,7 @@
         android:paddingRight="20dp">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/et_judul"
+            android:id="@+id/et_judul2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -25,7 +25,7 @@
             />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_nama"
+            android:id="@+id/et_nama2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="25dp"
@@ -34,12 +34,83 @@
             android:textColorHint="@color/hint"
             android:hint="@string/nama"
             android:theme="@style/EditText"
-            android:inputType="text"
+            android:inputType="text|textCapWords"
+            android:textSize="16sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded">
+            <Spinner
+                android:id="@+id/spinnerGender2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:entries="@array/jk"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_umur2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:hint="@string/umur"
+            android:theme="@style/EditText"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:maxLength="3"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_email2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:hint="@string/email"
+            android:theme="@style/EditText"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_telp2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:hint="@string/telp"
+            android:theme="@style/EditText"
+            android:inputType="phone"
+            android:textSize="16sp"
+            android:maxLength="12"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_alamat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:hint="@string/alamat"
+            android:theme="@style/EditText"
+            android:inputType="textMultiLine|textCapWords"
             android:textSize="16sp"
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/bt_simpan"
+            android:id="@+id/bt_simpan2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="50dp"

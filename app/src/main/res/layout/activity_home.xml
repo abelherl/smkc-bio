@@ -29,6 +29,19 @@
                 />
 
             <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/bt_edit"
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:tint="@color/white"
+                android:background="#00000000"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toStartOf="@id/bt_info"
+                android:layout_alignBottom="@id/bt_info"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/bt_info"
                 android:layout_width="20dp"
                 android:layout_height="35dp"
@@ -60,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
-                android:layout_toStartOf="@id/bt_edit"
+                android:layout_toStartOf="@id/bt_dial"
                 android:layout_alignTop="@id/iv_profil"
                 android:textSize="20sp"
                 android:textColor="@color/white"
@@ -88,26 +101,14 @@
                 />
 
             <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/bt_edit"
-                android:layout_width="20dp"
-                android:layout_height="35dp"
-                android:tint="@color/white"
-                android:background="#00000000"
-                android:layout_marginTop="25dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignBottom="@id/tv_nama"
-                android:src="@drawable/ic_mode_edit_black_24dp"
-                />
-
-            <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/bt_dial"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:tint="@color/white"
                 android:background="#00000000"
-                android:layout_alignEnd="@id/bt_edit"
-                android:layout_below="@id/bt_edit"
-                android:layout_alignTop="@id/tv_phone"
+                android:layout_alignTop="@id/tv_nama"
+                android:layout_alignBottom="@id/tv_phone"
+                android:layout_alignParentEnd="true"
                 android:src="@drawable/ic_local_phone_black_24dp"
                 />
 
@@ -204,7 +205,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="50dp">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"

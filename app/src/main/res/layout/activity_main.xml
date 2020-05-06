@@ -34,7 +34,7 @@
             android:textColorHint="@color/hint"
             android:hint="@string/nama"
             android:theme="@style/EditText"
-            android:inputType="text"
+            android:inputType="text|textCapWords"
             android:textSize="16sp"
             />
 
@@ -84,6 +84,7 @@
             android:theme="@style/EditText"
             android:inputType="number"
             android:textSize="16sp"
+            android:maxLength="3"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -112,6 +113,7 @@
             android:theme="@style/EditText"
             android:inputType="phone"
             android:textSize="16sp"
+            android:maxLength="12"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -125,7 +127,7 @@
             android:textColorHint="@color/hint"
             android:hint="@string/alamat"
             android:theme="@style/EditText"
-            android:inputType="textMultiLine"
+            android:inputType="textMultiLine|textCapWords"
             android:textSize="16sp"
             />
 

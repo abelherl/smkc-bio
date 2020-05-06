@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private var namaInput : String = ""
     private var emailInput : String = ""
     private var telpInput : String = ""
+    private var umurInput : String = ""
     private var alamatInput : String = ""
     private var genderInput : String = ""
 
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         bundle.putString("nama", namaInput)
         bundle.putString("gender", genderInput)
         bundle.putString("email", emailInput)
+        bundle.putString("umur", umurInput)
         bundle.putString("telp", telpInput)
         bundle.putString("alamat", alamatInput)
         intent.putExtras(bundle)
@@ -47,6 +49,7 @@ class MainActivity : AppCompatActivity() {
     private fun validasiInput(){
         namaInput = et_nama.text.toString()
         emailInput = et_email.text.toString()
+        umurInput = et_umur.text.toString()
         telpInput = et_telp.text.toString()
         alamatInput = et_alamat.text.toString()
         genderInput = spinnerGender.selectedItem.toString()
@@ -54,6 +57,7 @@ class MainActivity : AppCompatActivity() {
             namaInput.isEmpty() -> et_nama.error = "Nama tidak boleh kosong"
             genderInput.equals("Pilih Jenis Kelamin", ignoreCase = true) ->
                 tampilToast("Jenis Kelamin harus dipilih")
+            umurInput.isEmpty() -> et_email.error = "Umur tidak boleh kosong"
             emailInput.isEmpty() -> et_email.error = "Email tidak boleh kosong"
             telpInput.isEmpty() -> et_telp.error = "Telp tidak boleh kosong"
             alamatInput.isEmpty() -> et_alamat.error = "Alamat tidak boleh kosong"
