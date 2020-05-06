@@ -34,7 +34,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:lineSpacingExtra="5dp"
-            android:text="So I was exploring some works of mine and somehow curious to see how it'd look like in mobile devices. Therefore, here's a fun little extra to show a bit of my recent just-for-fun works."
+            android:text="So I was exploring some works of mine and somehow curious to see how it'd look like in mobile devices. Therefore, here's a fun little extra to show a bit of my recent just-for-fun works. (Laggy I know smh)"
             />
 
         <androidx.appcompat.widget.AppCompatImageView
