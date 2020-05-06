@@ -42,17 +42,15 @@
             android:layout_height="287dp"
             android:layout_marginTop="40dp"
             android:src="@drawable/artboard"
-            android:scaleType="centerInside"/>
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
-            android:layout_height="287dp"
-            android:layout_marginTop="-20dp"
-            android:translationZ="-10dp"
+            android:layout_height="wrap_content"
             android:src="@drawable/attachment3"
-            android:scaleType="centerInside"
-            android:scaleX="1.2"
-            android:scaleY="1.2"/>
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
